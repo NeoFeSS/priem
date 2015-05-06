@@ -15,13 +15,12 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'1234',
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+		
 	),
 
 	// application components
@@ -41,7 +40,7 @@ return array(
 		),
 
 		// database settings are configured in database.php
-		//'db'=>require(dirname(__FILE__).'/database.php'),
+		'db'=>require(dirname(__FILE__).'/database.php'),
 
 		'errorHandler'=>array(
 			'errorAction'=>'site/error',

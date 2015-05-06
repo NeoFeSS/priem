@@ -31,3 +31,2246 @@ REQUEST_URI=/names
 in C:\OpenServer\domains\site.com\protected\views\names\index.php (5)
 in C:\OpenServer\domains\site.com\protected\controllers\NamesController.php (8)
 in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/09 14:35:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "test".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/test
+---
+2015/04/09 21:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/04/09 21:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2015/04/09 21:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/04/09 21:49:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "famework/gii".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('famework/gii')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/famework/gii
+---
+2015/04/09 21:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "gii".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/gii
+---
+2015/04/19 11:31:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/04/19 11:33:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\OpenServer\domains\framework\db\CDbConnection.php:387
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\OpenServer\domains\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\OpenServer\domains\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\OpenServer\domains\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/crud/index
+HTTP_REFERER=http://site.com/gii/controller/index
+---
+2015/04/19 11:33:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\OpenServer\domains\framework\db\CDbConnection.php:387
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\gii\generators\crud\CrudCode.php(44): CModule->__get('db')
+#5 C:\OpenServer\domains\framework\web\CFormModel.php(39): CrudCode->init()
+#6 C:\OpenServer\domains\framework\gii\CCodeGenerator.php(153): CFormModel->__construct()
+#7 C:\OpenServer\domains\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/gii/crud/index
+HTTP_REFERER=http://site.com/gii/default/index
+---
+2015/04/19 22:23:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\OpenServer\domains\framework\db\CDbConnection.php:387
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:24:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\OpenServer\domains\framework\db\CDbConnection.php:387
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:24:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection.connectionString cannot be empty.' in C:\OpenServer\domains\framework\db\CDbConnection.php:387
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:25:20 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.{{preps}}' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `{{preps}}`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/19 22:25:20 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "{{preps}}", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:26:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'priemnaia_komi9ssia'' in C:\OpenServer\domains\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\OpenServer\domains\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\OpenServer\domains\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\OpenServer\domains\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1474): CActiveRecord->getCommandBuilder()
+#7 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#8 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:28:16 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.{{preps}}s' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `{{preps}}s`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/19 22:28:16 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "{{preps}}s", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:28:30 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.{{preps}}' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `{{preps}}`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/19 22:28:30 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "{{preps}}", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:28:51 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.{preps}' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `{preps}`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/19 22:28:51 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "{preps}", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/
+---
+2015/04/19 22:52:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "a12".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('a12')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('a12')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/a12')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/a12
+---
+2015/04/19 22:57:23 [error] [exception.CException] exception 'CException' with message 'В классе Preps и его поведениях не найден метод или замыкание с именем "limit".' in C:\OpenServer\domains\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(227): CComponent->__call('limit', Array)
+#1 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->__call('limit', Array)
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): Preps->limit(2)
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2015/04/19 23:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "students".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('students')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('students')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/students')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/students
+---
+2015/04/19 23:16:26 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\index.php:10)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(14): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionStudents()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/students
+in C:\OpenServer\domains\site.com\protected\views\site\index.php (10)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (14)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/04/19 23:33:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "studs".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('studs')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('studs')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/studs')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/studs
+HTTP_REFERER=http://site.com/site/index
+---
+2015/04/20 09:38:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "kafs".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('kafs')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('kafs')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/kafs')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/kafs
+---
+2015/04/20 11:57:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/05/05 09:31:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://site.com/
+---
+2015/05/05 09:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 09:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Kafedrs
+---
+2015/05/05 09:59:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Kafedrs
+---
+2015/05/05 10:00:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2015/05/05 10:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "preps".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('preps')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/preps
+---
+2015/05/05 10:01:16 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\OpenServer\domains\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): CController->render('index', Array)
+#2 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#3 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('preps')
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/preps')
+#8 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/preps
+---
+2015/05/05 10:02:27 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\OpenServer\domains\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): CController->render('index', Array)
+#2 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#3 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('preps')
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/preps')
+#8 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/preps
+---
+2015/05/05 10:02:27 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "index".' in C:\OpenServer\domains\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): CController->render('index', Array)
+#2 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#3 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('preps')
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/preps')
+#8 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/preps
+---
+2015/05/05 10:04:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/preps
+---
+2015/05/05 10:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:04:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:04:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/preps
+---
+2015/05/05 10:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:06:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:08:33 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:08:58 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:11:35 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:11:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:12:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:12:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:12:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:12:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:13:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:13:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:26:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:27:22 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:27:35 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:27:36 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:27:59 [error] [exception.CException] exception 'CException' with message 'Контроллер SiteController не может найти представление "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:878
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(782): CController->renderPartial('Prepods', Array, true)
+#1 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): CController->render('Prepods', Array)
+#2 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#3 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('preps')
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/preps')
+#8 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#10 {main}
+REQUEST_URI=/site/preps
+---
+2015/05/05 10:28:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Prepods
+---
+2015/05/05 10:28:39 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:28:40 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:28:59 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:29:01 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:30:14 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:30:15 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:30:16 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:30:16 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:30:24 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Preps.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPreps()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/preps
+in C:\OpenServer\domains\site.com\protected\views\site\Preps.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:31:46 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:32:11 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:34:24 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:34:25 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:34:36 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:40:35 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:40:55 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:41:33 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.prepods' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `prepods`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:41:33 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "prepods", упомянутая в записи active record класса "Prepods", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Prepods))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('prepods')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/prepods')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/prepods
+---
+2015/05/05 10:41:46 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:41:56 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:41:57 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:42:16 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:43:20 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Prepods.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:43:45 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'priemnaia_komissia.prepods' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `prepods`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:43:45 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "prepods", упомянутая в записи active record класса "Prepods", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Prepods))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('prepods')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/prepods')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/prepods
+---
+2015/05/05 10:43:55 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:44:15 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:44:27 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:44:43 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:13 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:14 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:17 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:19 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:20 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:21 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:22 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:23 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:27 [error] [php] include(preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:45:28 [error] [php] include(C:\OpenServer\domains\site.com\protected\models\Preps.php): failed to open stream: No such file or directory (C:\OpenServer\domains\framework\YiiBase.php:432)
+Stack trace:
+#0 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): spl_autoload_call()
+#1 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionPrepods()
+#2 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#8 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/prepods
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/prepods
+---
+2015/05/05 10:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+---
+2015/05/05 10:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+---
+2015/05/05 10:51:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+---
+2015/05/05 10:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2015/05/05 10:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/
+---
+2015/05/05 10:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "prepods".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('prepods')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('prepods')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/prepods')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/prepods
+---
+2015/05/05 10:53:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:54:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:56:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:57:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:57:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Students
+---
+2015/05/05 10:57:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/Kafedrs
+---
+2015/05/05 10:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Index
+---
+2015/05/05 10:58:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Index".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Index')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Index')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Index')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Index
+---
+2015/05/05 10:58:59 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 10:59:00 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 11:01:25 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 11:01:27 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 11:01:28 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 11:02:01 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 11:02:01 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Index.php:17)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(8): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Index
+in C:\OpenServer\domains\site.com\protected\views\site\Index.php (17)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (8)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:08:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "preps".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('preps')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('preps')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/preps')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/preps
+---
+2015/05/05 12:18:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "abitur".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('abitur')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('abitur')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/abitur')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/abitur
+---
+2015/05/05 12:19:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "abitur".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('abitur')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('abitur')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/abitur')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/abitur
+---
+2015/05/05 12:19:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "abitur".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('abitur')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('abitur')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/abitur')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/abitur
+---
+2015/05/05 12:19:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "Abitur".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('Abitur')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('Abitur')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Abitur')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/Abitur
+---
+2015/05/05 12:19:24 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:21:11 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:21:12 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:21:44 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:21:44 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:21:45 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:22:47 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:22:48 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:22:49 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:22:58 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prkom.preps' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `preps`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:22:58 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "preps", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/students
+---
+2015/05/05 12:23:01 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prkom.preps' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `preps`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (7)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:23:01 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "preps", упомянутая в записи active record класса "Preps", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Preps))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(7): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('index')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/index
+HTTP_REFERER=http://site.com/site/students
+---
+2015/05/05 12:23:13 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:25:37 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:25:38 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:25:39 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:26:34 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:26:35 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:29:13 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:30:17 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:32:27 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:32:28 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:16 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:39 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:40 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:54 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:55 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/05 12:37:56 [error] [php] Invalid argument supplied for foreach() (C:\OpenServer\domains\site.com\protected\views\site\Abitur.php:13)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\OpenServer\domains\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(26): SiteController->render()
+#3 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionAbiturient()
+#4 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/Abiturient
+in C:\OpenServer\domains\site.com\protected\views\site\Abitur.php (13)
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (26)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/06 09:45:54 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prkom.students' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `students`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (13)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/06 09:45:54 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "students", упомянутая в записи active record класса "Students", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Students))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(13): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionStudents()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('students')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/students')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/students
+HTTP_REFERER=http://site.com/site/index
+---
+2015/05/06 13:04:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "login".' in C:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('login')
+#1 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('login')
+#2 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#3 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/login
+---
+2015/05/06 13:06:39 [error] [php] Missing argument 1 for CController::render(), called in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php on line 31 and defined (C:\OpenServer\domains\framework\web\CController.php:778)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/login
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (31)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/06 13:07:07 [error] [php] Missing argument 1 for CController::render(), called in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php on line 31 and defined (C:\OpenServer\domains\framework\web\CController.php:778)
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\OpenServer\domains\framework\web\CController.php(286): SiteController->runAction()
+#2 C:\OpenServer\domains\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#3 C:\OpenServer\domains\framework\web\CWebApplication.php(282): SiteController->run()
+#4 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#6 C:\OpenServer\domains\site.com\index.php(11): CWebApplication->run()
+REQUEST_URI=/site/login
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (31)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/06 19:55:48 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'prkom.students' doesn't exist. Выполнявшийся SQL-запрос: SHOW FULL COLUMNS FROM `students`.
+in C:\OpenServer\domains\site.com\protected\controllers\SiteController.php (13)
+in C:\OpenServer\domains\site.com\index.php (11)
+2015/05/06 19:55:48 [error] [exception.CDbException] exception 'CDbException' with message 'Таблица "students", упомянутая в записи active record класса "Students", не найдена в базе данных.' in C:\OpenServer\domains\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Students))
+#1 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 C:\OpenServer\domains\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 C:\OpenServer\domains\site.com\protected\controllers\SiteController.php(13): CActiveRecord->findAll()
+#5 C:\OpenServer\domains\framework\web\actions\CInlineAction.php(49): SiteController->actionStudents()
+#6 C:\OpenServer\domains\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\OpenServer\domains\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\OpenServer\domains\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('students')
+#10 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('site/students')
+#11 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#12 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/site/students
+---
+2015/05/06 19:55:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in C:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 C:\OpenServer\domains\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\site.com\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
